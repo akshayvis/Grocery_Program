@@ -39,6 +39,15 @@ class Item(Itemcategory):
         self._iquantity = iquantity    #Protected
         self._iprice = iprice    #Protected
         
+    def getIname(self):
+        return self._iname
+    def getStock(self):
+        return self._stock
+    def getIquantity(self):
+        return self._iquantity
+    def getIprice(self):
+        return self._iprice
+        
     #Add item function
     def additem(category,name,quantity,price):
         if (name in Item.itemobj.keys()):
